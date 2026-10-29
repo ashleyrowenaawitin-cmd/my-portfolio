@@ -83,6 +83,12 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
@@ -169,15 +175,20 @@ section {
   max-width: 1120px;
   margin: 0 auto;
   padding: clamp(48px, 8vw, 96px) clamp(16px, 5vw, 64px);
+  scroll-margin-top: 72px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   align-items: center;
-  gap: 40px;
+  gap: clamp(28px, 5vw, 64px);
 
-  min-height: 78vh;
+  min-height: min(78vh, 760px);
+}
+
+.hero > * {
+  min-width: 0;
 }
 
 .hero h1 {
@@ -192,6 +203,7 @@ section {
 
 .hero p {
   max-width: 52ch;
+  margin: 18px 0 0;
   color: var(--muted);
   font-size: 18px;
 }
@@ -216,6 +228,7 @@ section {
   border-radius: 999px;
 
   font-weight: 600;
+  text-align: center;
   text-decoration: none;
 
   transition:
@@ -244,24 +257,39 @@ section {
 
 .photo,
 .ph {
-  display: grid;
-  place-items: center;
-
   background: var(--surface);
   color: var(--muted);
   text-align: center;
 }
 
 .photo {
-  aspect-ratio: 4 / 5;
-  padding: 20px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3 / 4;
+  padding: 10px;
+  overflow: hidden;
+  justify-self: end;
 
   border: 2px dashed var(--line);
   border-radius: 24px;
   font-size: 14px;
 }
 
+.photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 16px;
+}
+
 .ph {
+  display: grid;
+  place-items: center;
+
   min-height: 300px;
   padding: 24px;
 
@@ -287,8 +315,26 @@ section {
 .two,
 .cmp {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 32px;
+}
+
+.two {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: start;
+  gap: clamp(24px, 4vw, 48px);
+}
+
+.two > * {
+  min-width: 0;
+}
+
+.two p {
+  margin: 0;
+}
+
+.two p + p {
+  margin-top: 14px;
 }
 
 .cmp {
@@ -319,15 +365,20 @@ section {
 
 .facts li {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 4px 16px;
 
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
+  text-align: right;
 }
 
 .facts span {
+  flex: 0 0 auto;
   color: var(--muted);
+  text-align: left;
 }
 
 
@@ -344,6 +395,9 @@ section {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 24px;
 
   background: var(--surface);
@@ -356,7 +410,7 @@ section {
 }
 
 .card h3 {
-  margin-bottom: 8px;
+  margin: 0;
   font-size: 20px;
 }
 
@@ -452,6 +506,7 @@ tbody tr:hover {
 
 .sum {
   max-width: 64ch;
+  margin: 0;
   font-size: 19px;
 }
 
