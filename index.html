@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ashley Rowena L. Awitin – Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=Roboto:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <b>Ashley Awitin</b>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#comparison">Comparison</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div>
+        <h1>Ashley Rowena L. Awitin<span>IT graduate student</span></h1>
+        <p>I am an Information Technology graduate student. I design and build simple, clear websites. This portfolio shows my design work for COMP101.</p>
+        <div class="btns">
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="ash.jpg">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="two">
+        <div>
+          <p>I am a graduate student in Information Technology. I like turning ideas into working websites. I pay attention to the details that keep a design consistent, such as colors, fonts, spacing and buttons.</p>
+          <p>Right now, I am learning how to turn Figma designs into real code.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Program</span>Graduate student, Information Technology</li>
+          <li><span>Course</span>COMP101</li>
+          <li><span>Tools</span>Figma, HTML/CSS, Tailwind CSS</li>
+          <li><span>Interests</span>UI design, design systems, web development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="focus">
+      <h2>What I focus on</h2>
+      <p class="sum">I focus on three things: planning a design before building, turning it into a real page, and making it easy to use.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Design systems</h3>
+          <p>Choosing colors, fonts and button styles so every page looks like it belongs together.</p>
+        </div>
+        <div class="card">
+          <h3>Front-end development</h3>
+          <p>Turning Figma designs into web pages that work on phones and computers, using HTML and CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Usability</h3>
+          <p>Easy-to-read text, a clear order of information, and buttons that react when you hover over them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="comparison-section">
+      <div class="cmp-head">
+        <div>
+          <p class="eyebrow">Design review · COMP101</p>
+          <h2>Design System Comparison</h2>
+          <p class="sum cmp-lede">Two complete design systems, side by side. Preview each design system in full, compare their type and color decisions, and copy any palette value in one click.</p>
+        </div>
+        <div class="cmp-stats" aria-label="Comparison contents">
+          <span><strong>02</strong> design systems</span>
+          <span><strong>06</strong> color families each</span>
+          <span><strong>04</strong> heading steps</span>
+        </div>
+      </div>
+
+      <div class="cmp-view" data-cmp-view role="group" aria-label="Choose which design system to show on small screens">
+        <span class="cmp-view__label" aria-hidden="true">View</span>
+        <button type="button" data-view="both" aria-pressed="true" aria-controls="ds-compare-grid">Both</button>
+        <button type="button" data-view="a" aria-pressed="false" aria-controls="ds-compare-grid">A · IronCore</button>
+        <button type="button" data-view="b" aria-pressed="false" aria-controls="ds-compare-grid">B · daisyUI</button>
+      </div>
+
+      <div id="ds-compare-grid" class="ds-compare-grid" data-mobile-view="both"></div>
+      <noscript>
+        <p class="ds-noscript">Enable JavaScript to load the interactive comparison cards. The comparison table below is still available.</p>
+      </noscript>
+
+      <div class="cmp-table">
+        <div class="cmp-table__head">
+          <div>
+            <p class="eyebrow">Quick reference</p>
+            <h3>At a glance</h3>
+          </div>
+          <p>The same interface parts, interpreted with two very different moods.</p>
+        </div>
+        <div class="tw">
+          <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>IronCore</th>
+              <th>daisyUI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purpose</td>
+              <td>Gym and fitness landing page</td>
+              <td>Website for a Tailwind CSS tool</td>
+            </tr>
+            <tr>
+              <td>Primary color</td>
+              <td>Red, for energy and action</td>
+              <td>Violet, for a calm, modern feel</td>
+            </tr>
+            <tr>
+              <td>Secondary color</td>
+              <td>Slate gray</td>
+              <td>Hot pink</td>
+            </tr>
+            <tr>
+              <td>Status colors</td>
+              <td>Success, warning, error and info</td>
+              <td>The same four colors</td>
+            </tr>
+            <tr>
+              <td>Typeface</td>
+              <td>Roboto (backup font: Arial)</td>
+              <td>Noto Sans and Noto Sans JP</td>
+            </tr>
+            <tr>
+              <td>Type scale</td>
+              <td>Headings H1 to H6 and text sizes XXL to XS</td>
+              <td>Headings H1 to H6 and text sizes XXL to XXS</td>
+            </tr>
+            <tr>
+              <td>Weights shown</td>
+              <td>Light, regular, medium, bold</td>
+              <td>Light, regular, medium, bold</td>
+            </tr>
+            <tr>
+              <td>Buttons</td>
+              <td>Primary and outline buttons, with normal and hover states</td>
+              <td>Primary and secondary buttons, with normal and hover states</td>
+            </tr>
+            <tr>
+              <td>Overall mood</td>
+              <td>Strong and high contrast</td>
+              <td>Soft and friendly</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <dialog id="ds-preview-dialog" class="ds-dialog" aria-labelledby="ds-dialog-title">
+        <div class="ds-dialog__panel">
+          <header class="ds-dialog__head">
+            <div>
+              <p class="eyebrow" data-dialog-meta></p>
+              <h3 id="ds-dialog-title" data-dialog-title></h3>
+            </div>
+            <div class="ds-dialog__controls">
+              <button class="ds-dialog__close" type="button" data-close aria-label="Close design preview">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+              </button>
+            </div>
+          </header>
+          <div class="ds-dialog__scroll">
+            <img data-dialog-image alt="" decoding="async">
+          </div>
+          <p class="ds-dialog__hint">Scroll the frame to inspect the full system. Press Esc to close.</p>
+        </div>
+      </dialog>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p class="sum">Making two designs side by side showed me that the layout can stay the same while the mood changes. Colors, fonts and buttons give a website most of its personality.</p>
+      <p class="sum">IronCore showed me how bold colors and heavy text create energy. daisyUI showed me how lighter colors and more text sizes make a site clean and easy to use. Next, I want to turn these Figma designs into working code.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sum">Have a question or want to work together? Send me a message.</p>
+      <form onsubmit="return false" style="margin-top:20px">
+        <label>Name
+          <input type="text" placeholder="Your name">
+        </label>
+        <label>Email
+          <input type="email" placeholder="you@example.com">
+        </label>
+        <label>Message
+          <textarea rows="4" placeholder="How can I help?"></textarea>
+        </label>
+        <button class="btn p" type="button" style="cursor:pointer;justify-self:start">Send message</button>
+      </form>
+    </section>
+
+    <div id="ds-toast" class="ds-toast" aria-hidden="true"></div>
+
+    <footer>Ashley Rowena L. Awitin · COMP101</footer>
+
+    <script src="comparison-data.js" defer></script>
+    <script src="comparison.js" defer></script>
+  </body>
+</html>
