@@ -38,6 +38,8 @@ const DESIGN_SYSTEMS = [
     id: "a",
     label: "Design System A",
     name: "IronCore",
+    figmaUrl:
+      "https://www.figma.com/design/LtkkZ8sT8Za2ax9nSxBkMi/dat?m=auto&t=LlTnUvtAH2AhiCZz-6",
     tagline: "Bold, strong and energetic.",
     description:
       "A high-contrast fitness system built to feel fast and forceful. Red drives action, heavy type carries the energy, and slate keeps the structure grounded.",
@@ -78,6 +80,8 @@ const DESIGN_SYSTEMS = [
     id: "b",
     label: "Design System B",
     name: "daisyUI",
+    figmaUrl:
+      "https://www.figma.com/design/Q97CbepUdUkrVIHYZ3a2N0/av?m=auto&t=LlTnUvtAH2AhiCZz-6",
     tagline: "Light, clean and friendly.",
     description:
       "A light, friendly system for a Tailwind CSS product. Violet leads, pink adds warmth, and generous type sizes keep the interface approachable.",
